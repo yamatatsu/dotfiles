@@ -1,0 +1,55 @@
+[user]
+        name = yamatatsu
+        email = the.kinnikuman@gmail.com
+[credential]
+        helper = osxkeychain
+[filter "lfs"]
+        process = git-lfs filter-process
+        required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+[alias]
+        l = log -3 --show-signature
+        l1 = log -1 --show-signature
+        l2 = log -2 --show-signature
+        l3 = log -3 --show-signature
+        la = log --show-signature
+        s = status
+        st = status
+        d = diff
+        df = diff
+        co = checkout
+        cob = checkout -b
+        a = add
+        aa = add --all
+        cm = commit
+        cmm = commit -m
+        cmam = commit -am
+        pu = "!pushu() { git push -u origin $(git symbolic-ref --short HEAD) ;}; pushu"
+        b = branch
+        br = branch
+        pl = pull
+        cp = cherry-pick
+        graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+        g = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+        po = "!po() { hub compare $(git symbolic-ref --short HEAD) ;}; po"
+        wip = commit --allow-empty -m \"[ci skip] WIP\"
+        mkwip = !"f() { git checkout master; git pull; git checkout -b $1; git wip; git push -u origin $1; open $(echo '[WIP]' $2'\n\n'\"$(<.github/PULL_REQUEST_TEMPLATE.md)\" | hub pull-request -F - -a $(git config --global user.name) -l wip); }; f"
+        tree = log --graph --all --date=short --format=\"%x09%C(yellow)%ad %C(yellow bold)%h %C(cyan bold)%an%Creset %C(magenta reverse)%d%Creset %s\"
+[core]
+        excludesfile = ~/.gitignore
+[fetch]
+        prune = true
+[http]
+        cookiefile = ~/.gitcookies
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
+[commit]
+        template = ~/.stCommitMsg
+        gpgsign = false
+[gpg]
+        program = gpg
