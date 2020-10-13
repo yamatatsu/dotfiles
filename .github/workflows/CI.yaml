@@ -11,3 +11,5 @@ jobs:
 
       - name: Check aws
         run: aws --version
+      - name: Check deploying
+        run: g s
