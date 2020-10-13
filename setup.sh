@@ -1,17 +1,23 @@
 #!/bin/bash
 
-# # use installed fish
-# sudo chsh -s /usr/bin/fish
+# ####################################
+#
+# This file is for github codespaces
+#
+# ####################################
 
-# # apt-get
-# sudo apt-get update
-# sudo apt-get install -y \
-#   groff \
+# use installed fish
+sudo chsh -s /usr/bin/fish
 
-# echo '===== install tools ====='
-# for shfile in ./install/* ;do
-#   bash ${shfile}
-# done
+# apt-get
+sudo apt-get update
+sudo apt-get install -y \
+  groff \
+
+echo '===== install tools ====='
+for shfile in ./install/* ;do
+  bash ${shfile}
+done
 
 echo '===== deploy files ====='
 cd ./deploy
