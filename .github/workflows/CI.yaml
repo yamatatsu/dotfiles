@@ -13,5 +13,8 @@ jobs:
         run: aws --version
       - name: Check homebrew
         run: brew --version
-      - name: Check deploying
+      - name: Check gh
+        run: gh --version
+
+        - name: Check deploying
         run: git s
