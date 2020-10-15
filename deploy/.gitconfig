@@ -53,3 +53,7 @@
         gpgsign = false
 [gpg]
         program = gpg
+[github]
+	user = yamatatsu
+[ghi]
+	token = !security find-internet-password -a yamatatsu -s github.com -l 'ghi token' -w

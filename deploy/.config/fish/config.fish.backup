@@ -1,0 +1,45 @@
+alias ll='ls -al'
+alias g='git'
+alias dc='docker-compose'
+alias ios_simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/'
+alias codefishconf='code ~/.config/fish/config.fish'
+alias codeawscredential='code ~/.aws/credentials'
+alias syukkin='~/Projects/kintai/bin/syukkin'
+alias taikin='~/Projects/kintai/bin/taikin'
+
+# java version
+set JAVA_HOME (/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8")
+set PATH $JAVA_HOME/bin $PATH
+
+set PATH ~/Library/Python/2.7/bin $PATH
+set PATH ~/scripts/bin $PATH
+
+set ANDROID_HOME $HOME/Library/Android/sdk
+set PATH $PATH $ANDROID_HOME/emulator
+set PATH $PATH $ANDROID_HOME/tools
+set PATH $PATH $ANDROID_HOME/tools/bin
+set PATH $PATH $ANDROID_HOME/platform-tools
+set PATH $PATH $HOME/.deno/bin
+set PATH $PATH $HOME/.deno/bin
+set PATH $PATH $HOME/development/flutter/bin
+
+set GOROOT $HOME/go
+set GOPATH $HOME/gopath
+set PATH $PATH $GOROOT/bin $GOPATH/bin
+
+set PATH $PATH $HOME/fuchsia/.jiri_root/bin
+
+# fisherman/scorphish
+set theme_display_nvm "yes"
+set theme_display_virtualenv "no"
+
+eval (direnv hook fish)
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[ -f /Users/yamamototatsuya/Projects/zennose/modules/zennose-serverless/node_modules/tabtab/.completions/serverless.fish ]
+and . /Users/yamamototatsuya/Projects/zennose/modules/zennose-serverless/node_modules/tabtab/.completions/serverless.fish
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[ -f /Users/yamamototatsuya/Projects/zennose/modules/zennose-serverless/node_modules/tabtab/.completions/sls.fish ]
+and . /Users/yamamototatsuya/Projects/zennose/modules/zennose-serverless/node_modules/tabtab/.completions/sls.fish

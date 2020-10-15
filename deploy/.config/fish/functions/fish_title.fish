@@ -1,0 +1,1 @@
+/Users/tatsuya.yamamoto/.config/fisherman/scorphish/fish_title.fish
