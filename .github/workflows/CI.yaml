@@ -11,5 +11,9 @@ jobs:
 
       - name: Check aws
         run: aws --version
+      - name: Check homebrew
+        run: brew --version
       - name: Check deploying
-        run: git s
+        run: |
+          fish
+          g s
