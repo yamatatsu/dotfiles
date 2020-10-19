@@ -8,10 +8,10 @@ The entry point is `./setup.sh`.
 
 ## tasks
 
-- [ ] install gh
+- [x] install gh
 - [x] deploy fish configs
-- [ ] deploy vscode configs
-- [ ] install vscode extensions
+- [x] deploy vscode configs
+- [x] install vscode extensions
 - [ ] use docker for test because github-action's default ubuntu have some tools already (e.g. aws)
 
 #### 参考
