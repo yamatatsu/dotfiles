@@ -7,7 +7,7 @@
 # ####################################
 
 # use installed fish
-sudo chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/zsh
 
 # apt-get
 sudo apt-get update
