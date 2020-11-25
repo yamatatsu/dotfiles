@@ -2,7 +2,7 @@
         name = yamatatsu
         email = the.kinnikuman@gmail.com
 [credential]
-        helper = osxkeychain
+	helper = osxkeychain
 [filter "lfs"]
         process = git-lfs filter-process
         required = true
@@ -57,3 +57,5 @@
 	user = yamatatsu
 [ghi]
 	token = !security find-internet-password -a yamatatsu -s github.com -l 'ghi token' -w
+[color]
+	ui = auto
