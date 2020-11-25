@@ -1,1 +1,0 @@
-/Users/tatsuya.yamamoto/.config/fisherman/scorphish/fish_right_prompt.fish
