@@ -2,12 +2,13 @@
 
 echo '===== install tools ====='
 for shfile in ./install/* ;do
-  echo "settup ${shfile} for mac 👍"
+  echo "Installing ${shfile}..."
+  bash ${shfile}
 done
 
-# echo '===== deploy files ====='
-# cd ./deploy
-# for path in .??* ;do
-#   echo ${path}
-#   ln -sf $(realpath ${path}) ~/${path}
-# done
+echo '===== deploy files ====='
+cd ./deploy
+for path in .??* ;do
+  echo ${path}
+  ln -sf $(realpath ${path}) ~/${path}
+done
