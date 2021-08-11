@@ -1,18 +1,28 @@
 # dotfiles
 
-For GitHub Codespaces.
+For M1 Mac.
 
-So the target is debian.
+## Usage
 
-The entry point is `./setup.sh`.
+```sh
+./setup.sh
+```
 
-## tasks
+# And..
 
-- [x] install gh
-- [x] deploy fish configs
-- [x] deploy vscode configs
-- [x] install vscode extensions
-- [ ] use docker for test because github-action's default ubuntu have some tools already (e.g. aws)
+Install following:
 
-#### 参考
-- [アカウントの Codespaces をパーソナライズする - GitHub](https://docs.github.com/ja/free-pro-team@latest/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account)
+- [docker](https://docs.docker.com/docker-for-mac/install/)
+- [Karabiner-Elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/)
+
+## Tasks
+
+- [ ] fish
+- [x] optimize for m1
+- [x] docker
+- [x] vscode
+- [x] iterm2
+- [x] clipy
+- [x] Karabiner
+- [x] lastpass
+- [x] google日本語入力
