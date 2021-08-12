@@ -7,8 +7,17 @@ for shfile in ./install/* ;do
 done
 
 echo '===== deploy files ====='
+function createLn () {
+  shopt -s dotglob
+  for path in $1/* ;do
+    if [ -f $path ]; then
+      echo "ln -sf $(pwd)/$path ~/$path"
+      ln -sf $(pwd)/$path ~/${path}
+    else
+      createLn $path
+    fi
+  done
+}
+
 cd ./deploy
-for path in .??* ;do
-  echo ${path}
-  ln -sf $(realpath ${path}) ~/${path}
-done
+createLn .
