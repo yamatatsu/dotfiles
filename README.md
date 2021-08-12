@@ -5,17 +5,8 @@ For M1 Mac.
 ## Usage
 
 ```sh
+cd ~/
+git clone https://github.com/yamatatsu/dotfiles.git
+cd dotfiles
 ./setup.sh
 ```
-
-## Tasks
-
-- [x] fish
-- [x] optimize for m1
-- [x] docker
-- [x] vscode
-- [x] iterm2
-- [x] clipy
-- [x] Karabiner
-- [x] lastpass
-- [x] google日本語入力
