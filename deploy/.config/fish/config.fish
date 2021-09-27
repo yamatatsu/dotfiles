@@ -7,6 +7,7 @@ alias ll='ls -al'
 alias g=git
 alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
 alias dc='docker-compose'
+alias codefishconfig='code ~/.config/fish/config.fish'
 
 # bobthefish
 set theme_display_git_master_branch yes
