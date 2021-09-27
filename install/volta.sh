@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl https://get.volta.sh | bash
-
+volta setup
+volta install node
 volta install yarn
 volta install node@16

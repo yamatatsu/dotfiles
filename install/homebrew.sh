@@ -5,6 +5,9 @@
 brew install git
 brew install gh
 brew install jq
+brew install go
+brew install rust
+brew install volta
 brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask clipy
@@ -23,3 +26,5 @@ sudo bash -c 'which fish >> /etc/shells'
 chsh -s `which fish`
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install oh-my-fish/theme-bobthefish
+fish
+eval (/opt/homebrew/bin/brew shellenv)
