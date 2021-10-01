@@ -19,6 +19,7 @@ brew install --cask docker
 
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono
+brew install --cask font-hackgen
 
 # fish
 brew install fish
